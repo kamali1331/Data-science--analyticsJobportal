@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Data Science & Analytics Job Portal</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body>
+  <!-- Navbar -->
+  <header class="navbar">
+    <div class="logo">Data Science & Analytics Job Portal</div>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#jobs">Jobs</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="hamburger">
+      <div class="line1"></div>
+      <div class="line2"></div>
+      <div class="line3"></div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <h1>Your Gateway to Data Science Careers</h1>
+      <p>Explore jobs, resources, and career guidance curated for analysts and AI aspirants.</p>
+      <a href="#jobs" class="btn-primary">Explore Jobs</a>
+    </div>
+  </section>
+
+  <!-- About Section -->
+  <section id="about" class="about">
+    <h2>About Us</h2>
+    <p>We help students and professionals break into Data Science, Analytics, AI & ML with job updates, resources, and
+      mentorship.</p>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="services">
+    <h2>What We Offer</h2>
+    <div class="service-grid">
+      <div class="service-card">Job Alerts</div>
+      <div class="service-card">Learning Roadmaps</div>
+      <div class="service-card">Interview Preparation</div>
+      <div class="service-card">Career Mentorship</div>
+    </div>
+  </section>
+
+  <!-- Jobs Section -->
+  <section id="jobs" class="jobs">
+    <h2>Latest Job Posts</h2>
+
+    <div class="search-container">
+      <input type="text" id="job-search" placeholder="Search for jobs (e.g. Data Analyst)...">
+    </div>
+
+    <div class="job-list" id="job-list">
+      <!-- Jobs will be rendered here via JavaScript -->
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Email: <a href="mailto:kamali27cc@gmail.com" style="color: var(--primary-color);">kamali27cc@gmail.com</a></p>
+
+    <div class="social-links-container">
+      <h3>Connect with us</h3>
+      <div class="social-icons">
+        <!-- LinkedIn Company -->
+        <a href="https://www.linkedin.com/company/data-science-analytics-job-portal/" target="_blank" class="social-btn"
+          title="LinkedIn Company">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <!-- LinkedIn Personal -->
+        <a href="https://www.linkedin.com/in/kamalisridhar/?locale=en_US" target="_blank" class="social-btn"
+          title="LinkedIn (Kamali)">
+          <i class="fab fa-linkedin-in"></i>
+        </a>
+        <!-- X (Twitter) -->
+        <a href="https://x.com/kamali_sridhar" target="_blank" class="social-btn" title="X (Twitter)">
+          <i class="fab fa-twitter"></i> <!-- or fa-x-twitter if using newer FA -->
+        </a>
+        <!-- Preplaced -->
+        <a href="https://preplaced.in/profile/d-s-kamali" target="_blank" class="social-btn" title="Preplaced">
+          <i class="fas fa-chalkboard-teacher"></i>
+        </a>
+        <!-- Topmate -->
+        <a href="https://topmate.io/ds_kamali" target="_blank" class="social-btn" title="Topmate">
+          <i class="fas fa-video"></i>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <p>© 2025 Data With Kamali | All Rights Reserved</p>
+  </footer>
+
+  <!-- Application Modal -->
+  <div id="apply-modal" class="modal">
+    <div class="modal-content">
+      <span class="close-btn">&times;</span>
+      <h3>Apply for <span id="modal-job-title">Job Position</span></h3>
+      <form id="application-form">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" placeholder="John Doe" required />
+
+        <label for="email">Email</label>
+        <input type="email" id="email" placeholder="john@example.com" required />
+
+        <label for="resume">Resume Link</label>
+        <input type="url" id="resume" placeholder="Link to LinkedIn or Portfolio" required />
+
+        <button type="submit" class="btn-primary">Submit Application</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
